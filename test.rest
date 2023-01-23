@@ -1,0 +1,11 @@
+post http://localhost:8080/uploads
+Content-Type: application/json
+Accept: application/json
+
+{
+    "usernsme":"bharath",
+    "location":"chennai",
+    "description":"i am bharath",
+    "imagefile":"yfhc.jpg",
+    "date":"Date"
+}
