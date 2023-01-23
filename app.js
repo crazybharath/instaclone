@@ -77,7 +77,11 @@ app.post("/uploads", (req, res) => {
 app.get("/all", async (req, res) => {
     try {
         const alldata = await usersShema.find()
-        res.json({ result: alldata })
+        // res.json({ result: alldata })
+        res.status(200).json({
+            status: "success",
+            result: alldata
+        })
     } catch (e) {
         res.json({ message: e })
     }
